@@ -12,7 +12,14 @@ and open the template in the editor.
              width: 50px;
              height: 50px
             } 
-        </style> 
+            
+        </style>
+        <script>
+            function checkcolour(){;
+            alert();
+        }
+        
+        </script> 
         <meta charset="UTF-8">
         <title></title>
     </head>
@@ -23,7 +30,7 @@ and open the template in the editor.
                 echo "<tr>";
                    
                         for($x=0;$x<10;$x++){
-                        echo "<td><button></td>";
+                        echo "<td><button onclick=checkcolour() ></td>";
                     }
                     
                "</tr>"; 
