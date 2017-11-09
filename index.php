@@ -15,8 +15,9 @@ and open the template in the editor.
             
         </style>
         <script>
-            function checkcolour(){;
+            function checkcolour(){
             alert();
+            document.getElementById("knop").style.backgroundColor = 'red';
         }
         
         </script> 
@@ -30,7 +31,7 @@ and open the template in the editor.
                 echo "<tr>";
                    
                         for($x=0;$x<10;$x++){
-                        echo "<td><button onclick=checkcolour() ></td>";
+                        echo "<td><button id=knop onclick=checkcolour() ></td>";
                     }
                     
                "</tr>"; 
