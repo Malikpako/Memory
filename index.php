@@ -15,9 +15,10 @@ and open the template in the editor.
             
         </style>
         <script>
-            function checkcolour(){
-            alert();
-            document.getElementById("knop").style.backgroundColor = 'red';
+            function checkcolour(q){
+            alert(q);
+            
+            document.getElementById("knop"+q).style.backgroundColor = 'red';
         }
         
         </script> 
@@ -27,11 +28,11 @@ and open the template in the editor.
     <body>
         <table>
             <?php
-                for($y=0;$y<10;$y++){
+                for($y=1;$y<5;$y++){
                 echo "<tr>";
                    
-                        for($x=0;$x<10;$x++){
-                        echo "<td><button id=knop onclick=checkcolour() ></td>";
+                        for($x=1;$x<5;$x++){
+                        echo "<td><button id=knop$x$y onclick=checkcolour($x$y) ></td>";
                     }
                     
                "</tr>"; 
