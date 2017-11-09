@@ -15,13 +15,25 @@ and open the template in the editor.
             
         </style>
         <script>
-            function checkcolour(q){
-            alert(q);
+            function checkcolour(q){           
+                document.getElementById("knop"+q).style.backgroundColor = gameboard(q);
+            }
+           
+            function gameboard(q){
+                var x = (""+q).substring(0,1) -1;
+                var y = (""+q).substring(1,2) -1;
+                console.log(x);
+                var gameboard = [
+                    ["red","orange","yellow","blue"],
+                    ["red","orange","yellow","blue"],
+                    ["red","orange","yellow","blue"],                
+                    ["red","orange","yellow","blue"]      
+                ];
+                return gameboard[x][y];
             
-            document.getElementById("knop"+q).style.backgroundColor = 'red';
-        }
+            }
         
-        </script> 
+        </script>
         <meta charset="UTF-8">
         <title></title>
     </head>
@@ -32,7 +44,7 @@ and open the template in the editor.
                 echo "<tr>";
                    
                         for($x=1;$x<5;$x++){
-                        echo "<td><button id=knop$x$y onclick=checkcolour($x$y) ></td>";
+                        echo "<td><button id=knop$y$x onclick=checkcolour($y$x) ></td>";
                     }
                     
                "</tr>"; 
