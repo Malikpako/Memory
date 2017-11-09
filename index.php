@@ -6,6 +6,13 @@ and open the template in the editor.
 -->
 <html>
     <head>
+        <style>
+            button{
+             background-color: gray;   
+             width: 50px;
+             height: 50px
+            } 
+        </style> 
         <meta charset="UTF-8">
         <title></title>
     </head>
