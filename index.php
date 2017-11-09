@@ -10,6 +10,28 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+        <table>
+            <?php
+                for($y=0;$y<10;$y++){
+                echo "<tr>";
+                   
+                        for($x=0;$x<10;$x++){
+                        echo "<td><button></td>";
+                    }
+                    
+               "</tr>"; 
+                }
+            ?> 
+            
+        </table> 
+        
+        
+        
+        
+        
+        
+        
+        
         <?php
         // put your code here
         ?>
